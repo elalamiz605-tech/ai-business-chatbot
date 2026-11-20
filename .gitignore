@@ -1,0 +1,15 @@
+# Secrets: NEVER commit these. Your real GEMINI_API_KEY lives in .env only.
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/

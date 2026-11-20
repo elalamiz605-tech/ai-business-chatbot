@@ -1,0 +1,53 @@
+{
+  "name": "Ember & Olive",
+  "type": "Mediterranean grill restaurant (fictional, used for this demo)",
+  "city": "Madrid, Spain",
+  "address": "Calle Ficticia 12, 28012 Madrid (3 minutes from Sol metro)",
+  "phone": "+34 910 000 000",
+  "email": "hello@ember-olive.example",
+  "website": "https://elalamiz605-tech.github.io/restaurant-website-demo/",
+  "hours": {
+    "Monday": "Closed",
+    "Tuesday": "13:00-23:00",
+    "Wednesday": "13:00-23:00",
+    "Thursday": "13:00-23:30",
+    "Friday": "13:00-00:30",
+    "Saturday": "12:30-00:30",
+    "Sunday": "13:00-17:00"
+  },
+  "kitchen_note": "The kitchen closes 30 minutes before closing time.",
+  "reservations": "Tables can be booked on the website with the 'Book a table' button, by phone, or by email. Groups of 8 or more must call. Walk-ins are welcome when tables are free.",
+  "menu": {
+    "Starters": [
+      "Ember-roasted peppers, 9 EUR (vegan, gluten-free)",
+      "Burrata & grilled peach, 13 EUR (vegetarian)",
+      "Octopus carpaccio, 15 EUR (gluten-free)",
+      "Hummus of the day with warm flatbread, 8 EUR (vegan)"
+    ],
+    "Mains": [
+      "Oak-grilled sea bass with fennel salad, 24 EUR (gluten-free)",
+      "Lamb skewers with yoghurt and mint, 22 EUR",
+      "Ember aubergine with tahini and pomegranate, 17 EUR (vegan, gluten-free)",
+      "Dry-aged ribeye for 2 people, 58 EUR (gluten-free)"
+    ],
+    "Desserts": [
+      "Burnt Basque cheesecake, 8 EUR (vegetarian)",
+      "Olive oil cake, 7 EUR (vegetarian)",
+      "Grilled pineapple with coconut sorbet, 7 EUR (vegan, gluten-free)"
+    ],
+    "Drinks": [
+      "House natural red wine (glass), 6 EUR",
+      "Albarino (glass), 7 EUR",
+      "Smoked rosemary lemonade (alcohol-free), 5 EUR",
+      "Vermouth on tap, 4 EUR"
+    ]
+  },
+  "policies": [
+    "Vegetarian, vegan and gluten-free options are marked on the menu. Guests should tell staff about allergies.",
+    "Card and contactless payments accepted. No cheques.",
+    "Dogs are welcome on the terrace only.",
+    "The restaurant is wheelchair accessible, including the toilets.",
+    "Private events up to 40 guests: contact by email.",
+    "Free Wi-Fi for guests."
+  ]
+}

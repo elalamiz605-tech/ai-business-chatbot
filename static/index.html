@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ember &amp; Olive · AI Assistant</title>
+  <meta name="theme-color" content="#05060D" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="layout">
+    <!-- Left: project explanation -->
+    <section class="intro">
+      <p class="eyebrow">AI Business Chatbot · Demo</p>
+      <h1>A 24/7 assistant that knows <span class="gradient">your business</span>.</h1>
+      <p class="lead">
+        This assistant answers customer questions for <strong>Ember &amp; Olive</strong>, a fictional restaurant:
+        opening hours, menu, dietary options, reservations and more. It is powered by Google Gemini and only
+        uses the business information it was given.
+      </p>
+      <ul class="points">
+        <li>Answers in the customer's language</li>
+        <li>Never invents prices or opening hours</li>
+        <li>API key kept on the server, never in the browser</li>
+      </ul>
+      <p class="credit">Built by <a href="https://elalamiz605-tech.github.io" target="_blank" rel="noopener">Ziad El Alami</a></p>
+    </section>
+
+    <!-- Right: chat window -->
+    <section class="chat" aria-label="Chat with the Ember & Olive assistant">
+      <header class="chat-head">
+        <div class="avatar" aria-hidden="true">E&amp;O</div>
+        <div>
+          <h2>Ember &amp; Olive</h2>
+          <p class="online"><span class="dot"></span> Assistant online</p>
+        </div>
+        <span class="badge" id="mode-badge" hidden>Demo mode</span>
+      </header>
+
+      <div class="messages" id="messages" role="log" aria-live="polite"></div>
+
+      <div class="suggestions" id="suggestions">
+        <button type="button">What are your opening hours?</button>
+        <button type="button">Do you have vegan dishes?</button>
+        <button type="button">How can I book a table?</button>
+        <button type="button">¿Dónde estáis?</button>
+      </div>
+
+      <form class="composer" id="composer">
+        <label for="input" class="sr-only">Your message</label>
+        <input id="input" type="text" maxlength="1000" placeholder="Ask a question…" autocomplete="off" required />
+        <button type="submit" aria-label="Send">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-6 16-3-7-7-1Z"/></svg>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="chat.js"></script>
+</body>
+</html>
