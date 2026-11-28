@@ -20,7 +20,7 @@ from chatbot.knowledge import build_system_prompt, demo_answer, load_business
 load_dotenv()  # reads .env (ignored by Git) into environment variables
 
 API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
-MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite")  # fast & cheap: ideal for customer chat.strip()
+MODEL = os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite").strip()  # fast & cheap: ideal for customer chat
 PORT = int(os.getenv("PORT", "5000"))
 
 MAX_MESSAGE_CHARS = 1000   # longest message a visitor can send

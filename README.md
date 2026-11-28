@@ -1,5 +1,9 @@
 # AI Business Chatbot (Gemini)
 
+[![CI](https://github.com/elalamiz605-tech/ai-business-chatbot/actions/workflows/ci.yml/badge.svg)](https://github.com/elalamiz605-tech/ai-business-chatbot/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-3-000000?logo=flask&logoColor=white)
+
 A customer-support chatbot for small businesses, powered by **Google Gemini**.
 It answers customer questions (opening hours, menu, prices, reservations, policies) **only from the business's own information**, in the customer's language, 24/7.
 
@@ -32,6 +36,7 @@ Browser (static/)  ──POST /api/chat──▶  Flask server (app.py)  ──H
 | `chatbot/gemini.py` | Small Gemini REST client (server-side only) |
 | `data/business.json` | **Edit this** to adapt the bot to any business |
 | `static/` | Chat interface (HTML, CSS, vanilla JS) |
+| `tests/` | Automated tests (pytest), run on every push by GitHub Actions |
 
 ## Installation
 
@@ -73,6 +78,15 @@ No key? Leave `GEMINI_API_KEY` empty and the bot starts in **demo mode**.
 
 > For production, run behind a WSGI server (e.g. `waitress` or `gunicorn`) and HTTPS, and use a shared rate limiter if you run several instances.
 
+## Tests
+
+32 automated tests cover request validation, rate limiting, demo mode, the system prompt and the Gemini client (with the network mocked, so no API key is needed). They run on every push with GitHub Actions on Python 3.10 and 3.13.
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest
+```
+
 ## Adapting it to another business
 
 1. Replace the content of `data/business.json` (name, hours, products/services, policies).
@@ -81,7 +95,7 @@ No key? Leave `GEMINI_API_KEY` empty and the bot starts in **demo mode**.
 
 ## Tech stack
 
-Python · Flask · Google Gemini API · HTML · CSS · JavaScript
+Python · Flask · Google Gemini API · pytest · GitHub Actions · HTML · CSS · JavaScript
 
 ---
 
